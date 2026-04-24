@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harbor Light Community Center</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: black;
+            margin: 0;
+            padding: 0;
+        }
+
+        .center-and-space-content {
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            background-color: navy;
+            overflow: hidden;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 20px;
+            border-bottom: 1px solid lightgrey;
+        }
+
+        footer {
+            background-color: grey;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="center-and-space-content">
+        <div class="center-and-space-content">
+            <img src="logo.jpg" alt="Harbor Light Community Center Logo">
+        </div>
+        <h1>Welcome to Harbor Light Community Center</h1>
+        
+        <img src="banner.jpg" alt="" aria-hidden="true">
+    </header>
+
+    <nav role="navigation" aria-label="Main Navigation">
+        <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Our Services</a></li>
+            <li><a href="#events">Join Our Events</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        
+        <section id="about">
+            <h2>About Us</h2>
+            <img src="community-center.jpg" alt="Harbor Light Community Center People">
+            <p>Harbor Light Community Center has been serving our neighborhood for over 20 years, providing a safe space for growth and connection.</p>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>After-school tutoring</li>
+                <li>Senior citizen wellness programs</li>
+                <li>Community gardening</li>
+                <li>Vocational training</li>
+            </ul>
+        </section>
+
+        <section id="events" itemscope itemtype="http://schema.org/Event">
+            <h2 itemprop="name">Join Our Events</h2>
+            <p itemprop="description">
+                <strong>Annual Summer Festival</strong><br>
+                A day of fun, food, and music for the whole family!
+            </p>
+            <p>
+                Start Date: 
+                <time itemprop="startDate" datetime="2050-07-15">July 15, 2050</time>
+            </p>
+        </section>
+
+    </main>
+
+    <footer id="contact">
+        <h2>Contact Us</h2>
+        <p>Questions? Reach out to us at: 
+            <a href="mailto:info@harborlight.com" style="color: yellow;">info@harborlight.com</a>
+        </p>
+        <p>123 Beacon Street, Harbor City</p>
+        
+        <hr>
+        
+        <p>&copy; 2050 Harbor Light Community Center</p>
+    </footer>
+
+</body>
+</html>
